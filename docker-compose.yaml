@@ -2,7 +2,10 @@ version: '3.8'
 
 services:
   nginx:
+    container_name: nginx
     image: nginx:stable
+    networks:
+      - lifehub_network
     ports:
       - "8080:80"
     volumes:
@@ -12,6 +15,9 @@ services:
       - php
 
   php:
+    container_name: php
+    networks:
+      - lifehub_network
     build:
       context: .
       dockerfile: docker/php/Dockerfile_dev
@@ -19,14 +25,21 @@ services:
       - ./app:/var/www/html
 
   db:
+    container_name: db
+    ports:
+      - "5432:5432"
     image: postgres:latest
     restart: always
-    environment:
-      POSTGRES_DB: myapp
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: secret
+    networks:
+      - lifehub_network
+    env_file:
+      - ./app/.env.db
     volumes:
       - db_data:/var/lib/postgresql/data
 
 volumes:
   db_data:
+
+networks:
+  lifehub_network:
+    external: true
