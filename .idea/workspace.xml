@@ -5,15 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30b34f55-cd93-431c-b4fe-799e60b47b99" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LifeHub.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_5_13_25__12_40PM.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/HealthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/TaskController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Entity/RefreshToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Enum/TaskPriorityEnum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Enum/TaskStatusEnum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Event/Security/JwtCreatedListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Helper/ValidatorHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Interface/TaskServiceInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Interface/UserServiceInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Filter/BaseCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Filter/BaseSort.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Filter/Task/TaskCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Filter/Task/TaskListFilter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Filter/Task/TaskSort.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Filter/User/UserCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Filter/User/UserListFilter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Filter/User/UserSort.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Request/Task/TaskCreateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Request/Task/TaskUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Request/User/UserCreateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Request/User/UserUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Response/Task/TaskCreateResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Response/Task/TaskItemResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Response/Task/TaskListResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Response/Task/TaskUpdateResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Response/User/UserCreateResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Response/User/UserItemResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Response/User/UserListItemsResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Response/User/UserListResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Model/Response/User/UserUpdateResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Repository/CustomRefreshTokenRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Service/AuthService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Service/EmailService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Service/TaskService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Service/UserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.env.dev" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env.dev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/controllers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/controllers/csrf_protection_controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/controllers/hello_controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/styles/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/lexik_jwt_authentication.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/lexik_jwt_authentication.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/monolog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/monolog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/gesdinet_jwt_refresh_token.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/nelmio_api_doc.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes/nelmio_api_doc.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Repository/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/translations/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/var/log/dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/php/xdebug.ini" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php/xdebug.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,13 +249,16 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/viktorbelyakov/Documents/Projects/LifeHub&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/viktorbelyakov/Documents/Projects/Lesson&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.add.doc.comment.for.fields.panel.add.php.doc.for.all.properties&quot;: &quot;true&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -211,6 +269,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/docker/php" />
@@ -230,8 +291,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHP Remote Debug.Unnamed" />
       <item itemvalue="PHPUnit.Main" />
+      <item itemvalue="PHP Remote Debug.Unnamed" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -254,6 +315,12 @@
       <workItem from="1747146761544" duration="455000" />
       <workItem from="1747147223949" duration="1979000" />
       <workItem from="1747149209122" duration="179000" />
+      <workItem from="1747149393289" duration="15854000" />
+      <workItem from="1747208239899" duration="606000" />
+      <workItem from="1747518757742" duration="974000" />
+      <workItem from="1747673770345" duration="8000" />
+      <workItem from="1748775942543" duration="130000" />
+      <workItem from="1748878670103" duration="214000" />
     </task>
     <servers />
   </component>
